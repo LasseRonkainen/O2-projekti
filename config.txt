@@ -1,0 +1,35 @@
+Config
+
+#Game window
+    window_size:(800, 900)
+    window_offset:(250,100)
+    square_size:(70,70)
+    game_size:(9, 8)
+
+#Map //note that this map has to respond to game_size
+    map_terrain:terrain.txt
+
+#End
+
+Factions
+
+    #Humans
+        Player:Human
+        Strength:8
+	Bonus:Field
+        Color:(150, 0, 0)
+
+    #Undead
+        Player:Enemy
+        Strength:12
+	Bonus:None
+        Color:(0, 0, 150)
+        Brain:Dead
+
+    #Orcs
+        Player:Enemy
+        Strength:14
+	Bonus:Hill
+        Color:(0, 150, 0)
+        Brain:Dead
+
