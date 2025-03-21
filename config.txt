@@ -3,11 +3,11 @@ Config
 #Game window
     window_size:(800, 900)
     window_offset:(250,100)
-    square_size:(70,70)
-    game_size:(9, 8)
+    square_size:(25,25)
+    game_size:(15, 20)
 
 #Map //note that this map has to respond to game_size
-    map_terrain:terrain.txt
+    map_terrain:kek.txt
 
 #End
 
