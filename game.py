@@ -50,6 +50,11 @@ class Game():
                 return player
             
         return None
+    
+    def get_human_player(self):
+        for player in self.players:
+            if isinstance(player, HumanPlayer):
+                return player
 
     def set_game(self):
         """

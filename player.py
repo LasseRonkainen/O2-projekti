@@ -1,3 +1,4 @@
+from PyQt6 import QtWidgets, QtCore, QtGui
 from army import Army
 
 class Player():
@@ -6,8 +7,9 @@ class Player():
         
         #Haetaan configista
         self.faction = faction
-        self.color =  color
+        self.color =  QtGui.QColor(color[0], color[1], color[2])
         self.strength = strength
+        self.bonus = bonus
 
         #Haetaan statesta, defaultina nämä
         self.armies = []
@@ -34,6 +36,10 @@ class Player():
         Palauttaa pelaajan edustaman factionin värin: QColor
         """
         return self.color
+    
+    def get_bonus(self):
+
+        return self.bonus
 
     def get_strength(self):
         return self.strength

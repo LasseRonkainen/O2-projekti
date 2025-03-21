@@ -8,7 +8,6 @@ class GUI(QtWidgets.QMainWindow):
         super().__init__()
 
         self.game = game
-        self.game.get_world()
 
         self.square_width,self.square_height = game.square_size
         self.window_width,self.window_height = game.window_size
@@ -86,6 +85,7 @@ class GUI(QtWidgets.QMainWindow):
         strength.setPos(0, 100)
         score.setPos(0, 300)
         faction.setRect(0, 500, 100, 100)
+        faction.setBrush(self.game.get_human_player().get_color())
 
         #Lisätään sceneen ja tehdään view, lisätään interface layoutiin
         self.scene.addItem(strength)
