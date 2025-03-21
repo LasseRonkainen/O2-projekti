@@ -8,7 +8,7 @@ Pystytään satunnaisgeneroimaan kartta tekstitiedostona (terrain_generator). Pe
 
 ## Käyttöohje
 
-  - Ohjelman voi ajella main - tiedostosta ja terrain_generator luo satunnaisen kartan käyttäjän antaman tiedoston nimen ja     koon mukaan. Toteutus kartanluonnissa laiskanlainen tarkastus
+  - Ohjelman voi ajella main - tiedostosta ja terrain_generator luo satunnaisen kartan käyttäjän antaman tiedoston nimen ja koon mukaan. Toteutus kartanluonnissa laiskanlainen tarkastus käyttäjän inputilta, ei muutekaan kovinkaan kriittinen osa ohjelmaa, ikkunanluonnin testaukseen vain. Tällähetkelle kek.txt on tällä luotu ja asetettu configiin.
 
 ## Aikataulu
 
