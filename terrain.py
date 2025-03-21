@@ -1,12 +1,9 @@
-from PyQt6 import QtWidgets, QtCore, QtGui
-
-
 class Terrain():
 
     def __init__(self, group):
 
         self.group = group
-        self.color = QtGui.QColor(0, 0, 0)
+        self.color = (0, 0, 0)
         self.penalty  = 100
         self.set_terrain()
 
@@ -19,13 +16,13 @@ class Terrain():
     def set_terrain(self):
 
         if self.group == 'Field':
-            self.color = QtGui.QColor(100, 100, 20)
+            self.color = (100, 100, 20)
             self.penalty = 2
         elif self.group == 'Forest':
-            self.color = QtGui.QColor(20, 150, 20)
+            self.color = (20, 150, 20)
             self.penalty = 3
         elif self.group == 'Hill':
-            self.color = QtGui.QColor(50, 50, 50)
+            self.color = (50, 50, 50)
             self.penalty = 3            
 
 

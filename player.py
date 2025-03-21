@@ -1,4 +1,3 @@
-from PyQt6 import QtWidgets, QtCore, QtGui
 from army import Army
 
 class Player():
@@ -7,7 +6,7 @@ class Player():
         
         #Haetaan configista
         self.faction = faction
-        self.color =  QtGui.QColor(color[0], color[1], color[2])
+        self.color =  color
         self.strength = strength
         self.bonus = bonus
 

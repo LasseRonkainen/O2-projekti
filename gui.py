@@ -56,7 +56,8 @@ class GUI(QtWidgets.QMainWindow):
             for x in range(self.game.get_world().get_width()):
                 square = QtWidgets.QGraphicsRectItem()
                 square.setRect(x*self.square_width, y*self.square_height, self.square_width, self.square_height)            
-                square.setBrush(self.game.get_world().get_square(Coordinates(x, y)).get_terrain().get_color())
+                r, g, b = self.game.get_world().get_square(Coordinates(x, y)).get_terrain().get_color()
+                square.setBrush(QtGui.QColor(r, g, b))
                 scene.addItem(square)
 
     def init_interface(self):
@@ -85,7 +86,8 @@ class GUI(QtWidgets.QMainWindow):
         strength.setPos(0, 100)
         score.setPos(0, 300)
         faction.setRect(0, 500, 100, 100)
-        faction.setBrush(self.game.get_human_player().get_color())
+        r, g, b = self.game.get_human_player().get_color()
+        faction.setBrush(QtGui.QColor(r, g, b))
 
         #Lisätään sceneen ja tehdään view, lisätään interface layoutiin
         self.scene.addItem(strength)
